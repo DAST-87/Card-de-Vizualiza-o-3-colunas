@@ -1,0 +1,100 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cards{
+    display: flex;
+    width: 870px;
+    height: 450px;
+    
+    
+}
+.card-sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+    padding: 50px;
+}
+.card-suv{
+    background-color: hsl(184, 100%, 22%);
+    padding: 50px;
+}
+.card-luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+    padding: 50px;
+}
+h1{  
+    font-family: 'Roboto', sans-serif;
+    color: hsl(0, 0%, 95%);
+    font-size: 34px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    
+
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 25px;
+}
+button{
+    margin-top: 70px;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: solid hsl(0, 0%, 95%) 2px;
+}
+.bot-1{
+    color: hsl(31, 77%, 52%);;
+}
+.bot-2{
+    color: hsl(184, 100%, 22%);
+}
+.bot-3{
+    color:hsl(179, 100%, 13%);
+}
+.bot-1:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    border: solid 2px hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+.bot-2:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+    border: solid 2px hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+.bot-3:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    border: solid 2px hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+/* Responsividade display smartphone*/
+@media (max-width: 700px){
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 160vh;
+        transition: 0.5s;
+    }
+    .card-sedans{
+        border-radius: 10px 10px 0 0;
+    }
+    .card-luxury{
+        border-radius: 0 0 10px 10px;
+    }
+}
