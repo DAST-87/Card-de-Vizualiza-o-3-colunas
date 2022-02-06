@@ -4,10 +4,19 @@
 }
 body{
     background-color: hsl(0, 0%, 95%);
+    width: 100vw;
+    height: 100vh;
+}
+main{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 .cards{
     display: flex;
@@ -82,12 +91,20 @@ button{
     border: solid 2px hsl(0, 0%, 95%);
     cursor: pointer;
 }
+.attribution{
+    padding: 10px 0 10px 0;
+    
+}
 /* Responsividade display smartphone*/
 @media (max-width: 700px){
+    main{
+        position: relative;
+        top: 90%;
+    }
     .cards{
         display: flex;
         flex-wrap: wrap;
-        width: 80%;
+        width: 75%;
         height: 160vh;
         transition: 0.5s;
     }
@@ -96,5 +113,20 @@ button{
     }
     .card-luxury{
         border-radius: 0 0 10px 10px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 30px;
+    }
+    button{
+        font-size: 14px;
+        margin-top: 120px;
+    }
+    .attribution{
+     margin-top: 50px;
     }
 }
