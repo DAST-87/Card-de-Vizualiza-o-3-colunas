@@ -99,7 +99,8 @@ button{
 @media (max-width: 700px){
     main{
         position: relative;
-        top: 90%;
+        top: 102%;
+        height: 100%;
     }
     .cards{
         display: flex;
@@ -127,6 +128,6 @@ button{
         margin-top: 120px;
     }
     .attribution{
-     margin-top: 50px;
+     margin-top: 280px;
     }
 }
