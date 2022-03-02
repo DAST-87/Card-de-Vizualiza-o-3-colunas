@@ -99,14 +99,13 @@ button{
 @media (max-width: 700px){
     main{
         position: relative;
-        top: 102%;
-        height: 100%;
+             
     }
     .cards{
+        margin-top: -200px;
         display: flex;
         flex-wrap: wrap;
         width: 75%;
-        height: 160vh;
         transition: 0.5s;
     }
     .card-sedans{
@@ -129,5 +128,6 @@ button{
     }
     .attribution{
      margin-top: 280px;
+     display: none;
     }
 }
